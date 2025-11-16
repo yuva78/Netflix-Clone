@@ -1,0 +1,70 @@
+.home {
+  background-color: #000; /* Black background for testing */
+  color: #fff; /* Ensure text is visible */
+}
+
+.wed{
+    position: relative;
+}
+.banner-img{
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+.wed-caption{
+    position: absolute;
+    width: 100%;
+    padding-left: 5%;
+    bottom: 0;
+    z-index: 10;
+}
+.caption-img{
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+.wed-caption p{
+    max-width: 700px;
+    font-size: 17px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.wed-btns{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.wed-btns .btn img{
+    width: 25px;
+}
+
+.wed-btns .btn{
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wed-btns .btn.dark-btn{
+    color: #fff;
+    background: #6d6d6eb3;
+}
+
+
+.wed-btns .btn:hover {
+    background:#ffffffbf;
+}
+
+.wed-btns .btn.dark-btn:hover {
+    background: #6d6d6e66;
+}
