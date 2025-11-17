@@ -14,7 +14,8 @@ const Login = () => {
       <div className= "login-form" >
         <h1>{signState}</h1>
         <form >
-          <input type="text" placeholder='Your Name' />
+          {signState==="Sign Up"?<input type="text" placeholder='Your Name' />:<></>}
+          
           <input type="email" placeholder='Email' />
           <input type="password" placeholder='Password' />
           <button>Sign Up</button>
@@ -27,8 +28,11 @@ const Login = () => {
           </div>
         </form>
         <div className="form-switch">
+          {signState==="Sign In"?
           <p>New to Netflix? <span>Sign Up Now</span> </p>
-          <p>Already have an Account? <span>Sign In Now</span> </p>
+          :<p>Already have an Account? <span>Sign In Now</span> </p>
+        }
+          
         </div>
       </div>
     </div>
