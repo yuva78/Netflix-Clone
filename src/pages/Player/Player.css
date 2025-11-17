@@ -1,9 +1,11 @@
 .player {
+    position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    background: black;
 }
 .player img{
     position: absolute;
@@ -11,13 +13,17 @@
     left: 20px;
     width: 50px;
     cursor: pointer;
+    z-index: 1000;
 }
 .player iframe{
     border-radius: 10px;
+    z-index: 10;
+    margin-top: 80px;
 }
 .player-info{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    color: white;
 }
